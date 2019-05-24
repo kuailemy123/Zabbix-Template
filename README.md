@@ -15,7 +15,7 @@
 2. 进去`Ansible palybook目录`
 
    ```
-   cd cd Zabbix-Template/Ansible\ Playbook/
+   cd Zabbix-Template/Ansible\ Playbook/
    ```
 
 3. 执行ansible playbook命令
