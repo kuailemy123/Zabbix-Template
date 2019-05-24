@@ -1,0 +1,19 @@
+---
+
+- hosts: all
+  gather_facts: false
+  vars:
+  - app: System
+  tasks:
+  - name: 创建脚本存放目录
+    file: path=/etc/zabbix/scripts state=directory
+  - name: 拷贝脚本到/etc/zabbix/scripts目录
+    copy: src="{{ item }}" dest="/etc/zabbix/scripts" mode=0755
+    with_fileglob:
+      - "../{{ app }}/scripts/*"
+  - name: 拷贝配置文件到zabbix_agentd.d目录
+    copy: src="{{ item }}" dest="/etc/zabbix/zabbix_agentd.d/"
+    with_fileglob:
+      - "../{{ app }}/*.conf"
+  - name: 重启 zabbix 服务
+    systemd: name=zabbix-agent state=restarted

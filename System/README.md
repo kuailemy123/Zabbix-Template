@@ -6,7 +6,7 @@
 ##  客户端操作
 
 1. 将配置`userparameter_system.conf` 放在`/etc/zabbix/zabbix_agentd.d/` 目录中
-2. 将脚本`disk_discovery.sh` 放在 `/etc/zabbix/scripts/` 目录中
+2. 将`scripts`目录的脚本放在 `/etc/zabbix/scripts/` 目录中
 2. 重启客户端`/etc/init.d/zabbix-agent restart`
 3. 重启后测试`zabbix_agentd -t tcp.json`
 

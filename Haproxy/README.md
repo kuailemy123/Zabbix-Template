@@ -5,7 +5,7 @@
 ##  客户端操作
 
 1. 确保`socat`被安装
-2. 将`haproxy_discovery.sh`, `haproxy_stats.sh` 放在 `/etc/zabbix/scripts/` 目录中
+2. 将`scripts`目录的脚本放在 `/etc/zabbix/scripts/` 目录中
 3. 将`userparameter_haproxy.conf` 放在`/etc/zabbix/zabbix_agentd.d/` 目录中
 4. 执行`usermod -a -G haproxy zabbix`, 以便zabbix有权限访问haproxy的socket
 5. 重启客户端`/etc/init.d/zabbix-agent restart`
