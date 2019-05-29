@@ -10,5 +10,5 @@
 
 1. 在web管理页面将`zbx_keepalived_templates_v3.xml` 导入
 2. 创建一个主机组 `Keepalived Servers`, 并将相关主机关联
-3. 根据自身情况，修改导入的模板`Haproxy` 中的宏变量 `{$KEEPALIVED_CONFIG}`
+3. 根据自身情况，修改导入的模板`Template App Keepalived<` 中的宏变量 `{$KEEPALIVED_CONFIG}`
 4. 将模板`Keepalived`关联到相关主机

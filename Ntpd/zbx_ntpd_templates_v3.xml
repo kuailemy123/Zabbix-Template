@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.4</version>
-    <date>2019-05-29T15:30:38Z</date>
+    <date>2019-05-29T05:59:45Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template Service ntpd</template>
-            <name>Template Service ntpd</name>
+            <template>Template Service Ntpd</template>
+            <name>Template Service Ntpd</name>
             <description/>
             <groups>
                 <group>
@@ -19,7 +19,7 @@
             </groups>
             <applications>
                 <application>
-                    <name>Service.NTP</name>
+                    <name>NTP</name>
                 </application>
             </applications>
             <items>
@@ -55,7 +55,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -96,7 +96,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -144,7 +144,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -192,7 +192,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -240,7 +240,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -288,7 +288,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -336,7 +336,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -384,7 +384,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -432,7 +432,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap>
@@ -482,7 +482,7 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>Service.NTP</name>
+                            <name>NTP</name>
                         </application>
                     </applications>
                     <valuemap/>
@@ -498,6 +498,129 @@
                         <key>ntpd.json</key>
                     </master_item>
                 </item>
+                <item>
+                    <name>Ntpd cpu used</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>proc.cpu.util[ntpd]</key>
+                    <delay>5s</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>NTP</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Ntpd memory used</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>proc.mem[ntpd]</key>
+                    <delay>5s</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>NTP</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Ntpd number of running processes</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>proc.num[ntpd]</key>
+                    <delay>5s</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>NTP</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
             </items>
             <discovery_rules/>
             <httptests/>
@@ -508,7 +631,39 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template Service ntpd:ntpd[delay].max(#3)}&gt;200</expression>
+            <expression>{Template Service Ntpd:proc.cpu.util[ntpd].count(#3,80,&quot;gt&quot;)} &gt;=3</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Dnsmasq cpu 使用率大于80%</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Service Ntpd:proc.num[ntpd].last()}&lt;1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Ntpd is not running on {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template Service Ntpd:ntpd[delay].max(#3)}&gt;200</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>[ NTP ] DELAY &gt; 200ms</name>
@@ -517,10 +672,16 @@
             <url/>
             <status>0</status>
             <priority>3</priority>
-            <description></description>
+            <description/>
             <type>0</type>
             <manual_close>0</manual_close>
-            <dependencies/>
+            <dependencies>
+                <dependency>
+                    <name>Ntpd is not running on {HOST.NAME}</name>
+                    <expression>{Template Service Ntpd:proc.num[ntpd].last()}&lt;1</expression>
+                    <recovery_expression/>
+                </dependency>
+            </dependencies>
             <tags/>
         </trigger>
     </triggers>
@@ -533,12 +694,12 @@
                     <newvalue>manycast server</newvalue>
                 </mapping>
                 <mapping>
-                    <value>b</value>
-                    <newvalue>broadcast client</newvalue>
-                </mapping>
-                <mapping>
                     <value>B</value>
                     <newvalue>broadcast server</newvalue>
+                </mapping>
+                <mapping>
+                    <value>b</value>
+                    <newvalue>broadcast client</newvalue>
                 </mapping>
                 <mapping>
                     <value>l</value>
